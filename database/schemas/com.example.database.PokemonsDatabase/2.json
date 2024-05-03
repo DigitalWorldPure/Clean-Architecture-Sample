@@ -1,0 +1,106 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "7d139a474d566083f2ee9ca6901a5003",
+    "entities": [
+      {
+        "tableName": "pokemon",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `name` TEXT, `height` INTEGER, `backDefault` TEXT, `backFemale` TEXT, `backShiny` TEXT, `backShinyFemale` TEXT, `frontDefault` TEXT, `frontFemale` TEXT, `frontShiny` TEXT, `frontShinyFemale` TEXT, `loadingError` TEXT, `haveDetailInfo` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "height",
+            "columnName": "height",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "backDefault",
+            "columnName": "backDefault",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "backFemale",
+            "columnName": "backFemale",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "backShiny",
+            "columnName": "backShiny",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "backShinyFemale",
+            "columnName": "backShinyFemale",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "frontDefault",
+            "columnName": "frontDefault",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "frontFemale",
+            "columnName": "frontFemale",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "frontShiny",
+            "columnName": "frontShiny",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "frontShinyFemale",
+            "columnName": "frontShinyFemale",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "loadingError",
+            "columnName": "loadingError",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "haveDetailInfo",
+            "columnName": "haveDetailInfo",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '7d139a474d566083f2ee9ca6901a5003')"
+    ]
+  }
+}

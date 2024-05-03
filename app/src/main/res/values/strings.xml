@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Clean Architecture Sample</string>
+    <string name="home_bottom_menu">Home</string>
+    <string name="list_bottom_menu">Pokemons</string>
+    <string name="default_pokemon_image">Default Pokemon Image</string>
+    <string name="pokemon_height">Height: %s</string>
+</resources>
